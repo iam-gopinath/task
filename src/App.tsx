@@ -39,19 +39,6 @@ const App: React.FC = () => {
     <div className="col_2">
     <Text className='text' text="Get Your Act Together!" />
     </div>
-    {/*   <div className="col_1">
-          <Block index={0}/>
-          <Block index={1}/>
-          <Block index={2}/>
-          <Block index={3}/>
-      </div>
-      <div className="col_2">
-          <Text className='text' text="He's not the sharpest knife in the drawer." />
-          
-          
-
-      </div> */}
-
     </div>
     </>
   );
