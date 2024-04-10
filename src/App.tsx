@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import Text from './component/Text';
+import Block from './Block';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+  // const handleClick = () => {
+  //   console.log('Button clicked!');
+  // };
+  // const onchange =() =>{
+  //   console.log('changed')
+  // }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <h1>Task</h1>
+    <div className='container'>
+    <div className="col_1">
+          <Block index={0}/> 
+    </div>
+    <div className="col_2">
+          <Text className='text' text="He's not the sharpest knife in the drawer." />  
+    </div>
+    <div className="col_1">
+          <Block index={1}/> 
+    </div>
+    <div className="col_2">
+    <Text className='text' text="The big building was blazing with lights." />  
+    </div>
+    <div className="col_1">
+          <Block index={2}/> 
+    </div>
+    <div className="col_2">
+    <Text className='text' text="Now you must answer some big questions." />
+    </div>
+    <div className="col_1">
+          <Block index={3}/> 
+    </div>
+    <div className="col_2">
+    <Text className='text' text="Get Your Act Together!" />
+    </div>
+    {/*   <div className="col_1">
+          <Block index={0}/>
+          <Block index={1}/>
+          <Block index={2}/>
+          <Block index={3}/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <div className="col_2">
+          <Text className='text' text="He's not the sharpest knife in the drawer." />
+          
+          
 
-export default App
+      </div> */}
+
+    </div>
+    </>
+  );
+};
+
+export default App;
